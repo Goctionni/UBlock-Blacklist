@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>uBlock — Blacklist</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/dashboard-common.css">
+<link rel="stylesheet" type="text/css" href="css/cloud-ui.css">
+<link rel="stylesheet" type="text/css" href="css/blacklist.css">
+</head>
+
+<body>
+
+<div id="cloudWidget" class="hide" data-cloud-entry="blacklistPane"></div>
+
+<p data-i18n="blacklistPrompt"></p>
+<p>
+    <button id="blacklistApply" class="custom important" type="button" disabled="true" data-i18n="blacklistApply"></button>&ensp;
+    <button id="blacklistRevert" class="custom" type="button" disabled="true" data-i18n="genericRevert"></button>
+</p>
+<p><textarea id="blacklist" dir="auto" spellcheck="false"></textarea></p>
+<p>
+    <button id="importBlacklistFromFile" class="custom" data-i18n="blacklistImport"></button>&ensp;
+    <button id="exportBlacklistToFile" class="custom" data-i18n="blacklistExport"></button>
+    <input id="importFilePicker" type="file" accept="text/plain" class="hiddenFileInput">
+</p>
+
+<script src="lib/punycode.js"></script>
+<script src="js/vapi-common.js"></script>
+<script src="js/vapi-client.js"></script>
+<script src="js/udom.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/dashboard-common.js"></script>
+<script src="js/cloud-ui.js"></script>
+<script src="js/blacklist.js"></script>
+
+</body>
+</html>
